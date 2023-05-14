@@ -15,4 +15,14 @@ dataMt = pd.read_csv('sad-01-students-peformace - Math.csv')
 dataPt = pd.read_csv('sad-01-students-peformace - Portuguese.csv')
 
 df = pd.DataFrame(dataPt)
-print(df['age'].describe()['mean'])
+'''
+print("dataPt")
+print(df)
+'''
+escolaGP = df[df['school']=='GP']
+'''
+print("Alunos da escola GP")
+print(escolaGP)
+'''
+print("Media das notas dos alunos da escola GP")
+print(escolaGP['age'].mean())
